@@ -21,7 +21,8 @@ app.use(fhRestExpress('users', fhRestMemoryAdapter()));
 // Important that this is last!
 app.use(mbaasExpress.errorHandler());
 
-var port = process.env.FH_PORT || process.env.VCAP_APP_PORT || 9001;
-app.listen(port, function() {
+var port = process.env.FH_PORT || process.env.OPENSHIFT_NODEJS_PORT || process.env.VCAP_APP_PORT || 9001;
+var host = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+app.listen(port, host, function() {
   log.info('App started at: %s on port: %s', new Date(), port);
 });
