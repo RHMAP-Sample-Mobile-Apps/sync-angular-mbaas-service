@@ -2,12 +2,12 @@
 
 const Joi = require('joi');
 
+// First and lastname are required by the schema
 const user = Joi.object({
-  firstname: Joi.string().min(2).required(),
-  lastname: Joi.string().min(2).required()
+  firstname: Joi.string().min(2).max(20).required(),
+  lastname: Joi.string().min(2).max(20).required()
 });
 
-// First and lastname are required
 module.exports = {
   create: [{
     // Incoming POST (create) requests must match the user type

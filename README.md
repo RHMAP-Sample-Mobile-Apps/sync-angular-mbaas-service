@@ -12,3 +12,15 @@ cd sync-angular-cloud
 npm install
 npm start
 ```
+
+## Testing
+
+Try hitting the running app with cURL or Postman with these requests:
+
+* GET http://localhos:9001/users/ - Should return an empty Object (at first)
+* POST http://localhos:9001/users/ - Include a JSON body (be sure to set the
+  content-type to "application/json") with "firstname" and "lastname" keys to
+  create a new user (stored in node.js memory)
+* PUT http://localhos:9001/users/1 - Update the user you created. Same payload format as POST
+* GET http://localhos:9001/users/ - Should return an Object with any users now created
+* DELETE http://localhos:9001/users/1 - Delete the user you first created.
