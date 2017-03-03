@@ -15,6 +15,7 @@
     "fh-mbaas-api": "~5.14.2",
     "fh-rest-express-router": "git://github.com/feedhenry-staff/fh-rest-express-router#0.8.0",
     "fh-rest-memory-adapter": "~0.2.0",
+    "fh-rest-mongodb-adapter": "~0.2.0",
     "joi": "~9.2.0"
   },
   "devDependencies": {
