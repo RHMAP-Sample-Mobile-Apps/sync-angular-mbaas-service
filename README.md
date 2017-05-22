@@ -1,5 +1,5 @@
-FeedHenry Sync Angular Cloud
-============================
+FeedHenry Sync Angular MBaaS Service
+====================================
 
 MBaaS Service for the [sync-angular-client](https://github.com/RHMAP-Sample-Mobile-Apps/sync-angular-client) that runs _fh-rest-express-router_ to expose a RESTful API, and _fh-rest-memory-adapter_ to store items in memory.
 
